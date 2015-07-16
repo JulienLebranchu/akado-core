@@ -1,5 +1,4 @@
 /*
- * $Id$
  *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
@@ -23,10 +22,6 @@ package fr.ird.akado.core.common;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0
  * @date 21 juil. 2014
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  *
  */
 public interface AkadoResume {
