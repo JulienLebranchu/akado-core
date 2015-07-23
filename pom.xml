@@ -4,8 +4,6 @@
 
     <groupId>fr.ird</groupId>
     <version>1.0</version>
-    
-
     <artifactId>akado-core</artifactId>
 
     <name>AKaDo :: Core</name>
@@ -47,7 +45,7 @@
         <dependency>
             <groupId>fr.ird</groupId>
             <artifactId>ird-common</artifactId>
-            <version>1.1</version>
+            <version>1.2</version>
         </dependency>
    
         <dependency>
