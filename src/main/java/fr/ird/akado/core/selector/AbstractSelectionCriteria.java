@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -19,26 +17,31 @@
 package fr.ird.akado.core.selector;
 
 /**
+ * Criteria for selecting based on an object <em>T</em>.
  *
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
- * @param <T>
+ * @param <T> the type of selection criteria
  * @since 2.0
  * @date 21 mai 2014
- *
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
- *
  */
 public abstract class AbstractSelectionCriteria<T> {
 
     T t;
 
+    /**
+     * Returns the element.
+     *
+     * @return the element
+     */
     public T get() {
         return t;
     }
 
+    /**
+     * Set the specified element.
+     *
+     * @param t element to set
+     */
     public void set(T t) {
         this.t = t;
     }

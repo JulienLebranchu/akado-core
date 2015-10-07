@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2015 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -26,13 +24,19 @@ package fr.ird.akado.core.common;
  * @since 2.0.1
  * @date 4 mars 2015
  *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
- *
  */
 public abstract class AkadoMessage {
 
+    /**
+     * Returns the message content.
+     *
+     * @return the message content
+     */
     public abstract String getContent();
+
+    @Override
+    public String toString() {
+        return getContent();
+    }
 
 }
