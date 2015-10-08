@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,7 +13,8 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */package fr.ird.akado.core;
+ */
+package fr.ird.akado.core;
 
 import fr.ird.akado.core.common.AbstractResult;
 import fr.ird.akado.core.common.AbstractResults;
@@ -31,10 +30,6 @@ import java.util.Properties;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0
  * @date 21 mai 2014
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  */
 public abstract class DataBaseInspector {
 
@@ -108,5 +103,7 @@ public abstract class DataBaseInspector {
     public abstract void info() throws Exception;
 
     public static Properties CONFIGURATION_PROPERTIES;
+
+    public abstract void close();
 
 }

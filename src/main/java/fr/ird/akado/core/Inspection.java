@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,7 +13,8 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */package fr.ird.akado.core;
+ */
+package fr.ird.akado.core;
 
 import fr.ird.akado.core.common.AbstractResults;
 
@@ -27,11 +26,6 @@ import fr.ird.akado.core.common.AbstractResults;
  * @param <T> the type of inspection
  * @since 2.0
  * @date 21 mai 2014
- *
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  */
 public abstract class Inspection<T> {
 

@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -29,11 +27,7 @@ import java.util.List;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0
  * @date 21 mai 2014
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
- */
+*/
 public class AkadoCore {
 
     private List<DataBaseInspector> dataBaseValidators;
