@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2015 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -31,10 +29,6 @@ import org.springframework.data.repository.CrudRepository;
  * @param <ID> le type de l'identifiant de l'objet à traiter via le repository
  * @since 2.0.1
  * @date 26 mars 2015
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  *
  */
 public interface DBExport<T, ID extends Serializable> {

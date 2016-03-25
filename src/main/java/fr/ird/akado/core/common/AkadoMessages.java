@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -32,10 +30,6 @@ import javax.swing.event.EventListenerList;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0
  * @date 23 mai 2014
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  */
 public class AkadoMessages extends ArrayList<AkadoMessage> {
 

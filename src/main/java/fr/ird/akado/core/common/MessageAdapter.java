@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -24,9 +22,6 @@ package fr.ird.akado.core.common;
  * @since 0.0
  * @date 5 juin 2014
  *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  */
 public abstract class MessageAdapter implements MessageListener {
 

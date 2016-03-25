@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -25,10 +23,6 @@ import java.util.EventListener;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0
  * @date 5 juin 2014
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  */
 public interface MessageListener extends EventListener {
 

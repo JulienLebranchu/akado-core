@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2014 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -35,10 +33,6 @@ import org.springframework.data.repository.CrudRepository;
  * @param <T> the type of elements in this result list
  * @since 2.0
  * @date 9 juil. 2014
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  */
 public abstract class AbstractResults<T> extends ArrayList<T> implements XLSExport, XMLExport, DBExport {
 

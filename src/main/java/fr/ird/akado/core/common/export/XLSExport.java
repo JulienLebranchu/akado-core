@@ -1,6 +1,4 @@
 /*
- * $Id$
- *
  * Copyright (C) 2015 Observatoire thonier, IRD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -24,10 +22,6 @@ package fr.ird.akado.core.common.export;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0.1
  * @date 26 mars 2015
- *
- * $LastChangedDate$
- *
- * $LastChangedRevision$
  *
  */
 public interface XLSExport {
