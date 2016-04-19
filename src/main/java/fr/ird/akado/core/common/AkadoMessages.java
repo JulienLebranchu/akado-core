@@ -16,6 +16,7 @@
  */
 package fr.ird.akado.core.common;
 
+import fr.ird.common.log.LogService;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -99,11 +100,14 @@ public class AkadoMessages extends ArrayList<AkadoMessage> {
             }
             writer.write(out);
         } catch (IOException ex) {
-            // report
+            LogService.getService(AkadoMessages.class).logApplicationError(ex.getMessage());
         } finally {
             try {
-                writer.close();
+                if (writer != null) {
+                    writer.close();
+                }
             } catch (Exception ex) {
+                LogService.getService(AkadoMessages.class).logApplicationError(ex.getMessage());
             }
         }
 
