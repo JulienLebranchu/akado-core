@@ -27,7 +27,7 @@ import fr.ird.akado.core.common.AbstractResults;
  * @since 2.0
  * @date 21 mai 2014
  */
-public abstract class Inspection<T> {
+public abstract class Inspector<T> {
 
     protected String name;
     protected String description;

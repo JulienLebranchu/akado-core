@@ -30,31 +30,31 @@ import java.util.List;
 */
 public class AkadoCore {
 
-    private List<DataBaseInspector> dataBaseValidators;
+    private List<DataBaseInspector> dataBaseInspectors;
     private final AkadoMessages akadoMessages;
 
     public AkadoCore() {
-        dataBaseValidators = new ArrayList<>();
+        dataBaseInspectors = new ArrayList<>();
         akadoMessages = new AkadoMessages();
 
 //        AkadoProperties.getService().init();
     }
 
-    public List<DataBaseInspector> getDataBaseValidator() {
-        return dataBaseValidators;
+    public List<DataBaseInspector> getDataBaseInspectors() {
+        return dataBaseInspectors;
     }
 
-    public void setDataBaseValidator(List<DataBaseInspector> dataBaseValidators) {
-        this.dataBaseValidators = dataBaseValidators;
+    public void setDataBaseInspectors(List<DataBaseInspector> dataBaseInspectors) {
+        this.dataBaseInspectors = dataBaseInspectors;
     }
 
-    public boolean addDataBaseValidator(DataBaseInspector dataBaseValidator) {
-        return this.dataBaseValidators.add(dataBaseValidator);
+    public boolean addDataBaseValidator(DataBaseInspector dataBaseInspector) {
+        return this.dataBaseInspectors.add(dataBaseInspector);
     }
 
     public void execute() throws Exception {
-        for (DataBaseInspector baseValidator : getDataBaseValidator()) {
-            baseValidator.validate();
+        for (DataBaseInspector dataBaseInspector : getDataBaseInspectors()) {
+            dataBaseInspector.validate();
         }
     }
 
