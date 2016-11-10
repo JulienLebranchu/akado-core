@@ -23,6 +23,7 @@ import fr.ird.akado.core.common.ResultAdapter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import org.joda.time.DateTime;
 
 /**
  * Classe représentant le point d'entrée d'une analyse sur une base de donnée.
@@ -106,4 +107,5 @@ public abstract class DataBaseInspector {
 
     public abstract void close();
 
+    public abstract void addTemporalConstraint(DateTime start, DateTime end);
 }

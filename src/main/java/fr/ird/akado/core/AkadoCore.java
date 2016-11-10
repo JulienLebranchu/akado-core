@@ -17,6 +17,7 @@
 package fr.ird.akado.core;
 
 import fr.ird.akado.core.common.AkadoMessages;
+import fr.ird.akado.core.selector.AbstractSelectionCriteria;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,18 +28,19 @@ import java.util.List;
  * @author Julien Lebranchu <julien.lebranchu@ird.fr>
  * @since 2.0
  * @date 21 mai 2014
-*/
+ */
 public class AkadoCore {
 
     private List<DataBaseInspector> dataBaseInspectors;
+    
     private final AkadoMessages akadoMessages;
 
     public AkadoCore() {
         dataBaseInspectors = new ArrayList<>();
         akadoMessages = new AkadoMessages();
 
-//        AkadoProperties.getService().init();
     }
+
 
     public List<DataBaseInspector> getDataBaseInspectors() {
         return dataBaseInspectors;
