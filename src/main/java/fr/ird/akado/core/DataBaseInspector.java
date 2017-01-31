@@ -20,6 +20,7 @@ import fr.ird.akado.core.common.AbstractResult;
 import fr.ird.akado.core.common.AbstractResults;
 import fr.ird.akado.core.common.AkadoMessages;
 import fr.ird.akado.core.common.ResultAdapter;
+import fr.ird.akado.core.selector.TemporalSelector;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -107,5 +108,8 @@ public abstract class DataBaseInspector {
 
     public abstract void close();
 
-    public abstract void addTemporalConstraint(DateTime start, DateTime end);
+    public void setTemporalConstraint(DateTime start, DateTime end) {
+        temporalSelector = new TemporalSelector(start, end);
+    }
+    protected static TemporalSelector temporalSelector;
 }
